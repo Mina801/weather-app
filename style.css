@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box; 
+}
+body{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background:linear-gradient(rgb(55, 150, 206),rgb(10, 29, 59));
+    color:white;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+}
+.timezone-section , .description-section{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:50%;
+    width:100%;
+    
+}
+.location{
+    width:50%;
+    font-size: 50px;
+}
+.degree-section{
+    display:flex;
+    margin-bottom:50px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.description-section{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+@media only screen and (max-width:700px){
+    .location{
+        font-size:36px;
+    }
+    #icon{
+        width:128px;
+        height:128px;
+    }
+}
